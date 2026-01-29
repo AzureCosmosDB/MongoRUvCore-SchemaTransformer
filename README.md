@@ -157,7 +157,7 @@ Before running the assessment, ensure that the client machine meets the followin
 4. Run the following command, providing the full path of the JSON file created in the previous step:
 
     ```cmd
-    python main.py --config <path_to_your_json_file> --source-uri <source_mongo_connection_string> --dest-uri <destination_connection_string>
+    python main.py --config-file <path_to_your_json_file> --source-uri <source_mongo_connection_string> --dest-uri <destination_connection_string>
     ```
 
 This process will generate a vCore-optimized schema with index and sharding recommendations based on your workload.
