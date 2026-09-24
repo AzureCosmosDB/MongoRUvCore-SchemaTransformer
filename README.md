@@ -238,7 +238,7 @@ Before running the assessment, ensure that the client machine meets the followin
 4. Run the following command, providing the full path of the JSON file created in the previous step:
 
     ```cmd
-    python main.py --config <path_to_your_json_file> --source-uri <source_mongo_connection_string> --dest-uri <destination_connection_string>
+    python main.py --config-file <path_to_your_json_file> --source-uri <source_mongo_connection_string> --dest-uri <destination_connection_string>
     ```
 
     **Optional: Authenticate the destination with Microsoft Entra ID** using `--dest-auth-entra-id`. When this flag is set, `--dest-uri` must be the Entra ID style connection string for the target cluster (no username / password embedded), and the script must be run from an environment whose identity has been enabled on the destination Azure DocumentDB. The tool will obtain an access token via `DefaultAzureCredential` for that identity:
